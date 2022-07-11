@@ -1,3 +1,4 @@
+// npm eslint --init
 module.exports = {
   // 启动eslint检测的环境
   env: {

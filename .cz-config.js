@@ -10,12 +10,12 @@ module.exports = {
         { value: 'feat', name: 'feat:    新功能' },
         { value: 'fix', name: 'fix:    修复bug' },
         { value: 'docs', name: 'docs:    文档变更' },
+        { value: 'refactor', name: 'refactor:    重构（即不是增加feature，也不是修复bug）' },
+        { value: 'test', name: 'test:    增加测试' },
         { value: 'chore', name: 'chore:    构建过程或辅助工具的变动' },
         { value: 'perf', name: 'perf:    性能优化' },
         { value: 'style', name: 'style:    样式变更（不影响代码运行的变动）' },
-        { value: 'refactor', name: 'refactor:    重构（即不是增加feature，也不是修复bug）' },
         { value: 'revert', name: 'revert:    回退' },
-        { value: 'test', name: 'test:    增加测试' },
     ],
     scopes: [
         { name: '登录' },
@@ -37,6 +37,8 @@ module.exports = {
     },
     allowCustomScopes: true,
     allowBreakingChanges: ['feat', 'fix'],
+    //跳过问题
     skipQuestions:['body','footer'],
+    //subject文字长度默认是72
     subjectLimit: 100,
 };
